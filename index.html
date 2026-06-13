@@ -411,24 +411,6 @@ section{padding:110px 7vw;position:relative;}
 #reasonText.swap{opacity:0;transform:translateY(10px);}
 .reason-count{margin-top:14px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);}
 
-/* ============================================================
-   TIMELINE
-============================================================ */
-#timeline{background:var(--cream-2);}
-.tl-head{text-align:center;max-width:640px;margin:0 auto 70px;}
-.tl{position:relative;max-width:820px;margin:0 auto;}
-.tl::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;
-  background:linear-gradient(var(--lav),var(--gold));transform:translateX(-50%);opacity:.4;}
-.tl-item{position:relative;width:50%;padding:0 44px 64px;}
-.tl-item:nth-child(odd){left:0;text-align:right;}
-.tl-item:nth-child(even){left:50%;text-align:left;}
-.tl-item::before{content:"";position:absolute;top:6px;width:15px;height:15px;border-radius:50%;
-  background:var(--cream-2);border:3px solid var(--lav-deep);box-shadow:0 0 0 5px rgba(183,156,237,.2);}
-.tl-item:nth-child(odd)::before{right:-8.5px;}
-.tl-item:nth-child(even)::before{left:-8.5px;}
-.tl-date{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600;}
-.tl-item h3{font-size:21px;margin:8px 0 8px;font-weight:700;}
-.tl-item p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;font-weight:300;}
 
 /* ============================================================
    CAKE — MAKE A WISH
@@ -608,9 +590,7 @@ footer .moon-back{position:relative;margin-top:34px;color:rgba(230,207,156,.55);
   .badge.b1{left:-10px}.badge.b2{right:-12px}
   .masonry{columns:2;}
   .trait-cards{grid-template-columns:1fr;}
-  .tl::before{left:18px;}
-  .tl-item{width:100%;left:0!important;text-align:left!important;padding:0 0 54px 52px;}
-  .tl-item::before{left:10.5px!important;right:auto!important;}
+
   .nav-dots{right:12px;gap:13px;}
   .moon{width:54px;height:54px;top:7%;right:8%;}
   .cake{transform:scale(.85);transform-origin:top center;}
@@ -694,7 +674,6 @@ footer .moon-back{position:relative;margin-top:34px;color:rgba(230,207,156,.55);
   <a href="#hero" data-label="Home" class="active"></a>
   <a href="#gallery" data-label="Memories"></a>
   <a href="#traits" data-label="Her Magic"></a>
-  <a href="#timeline" data-label="Our Story"></a>
   <a href="#cake-sec" data-label="Make a Wish"></a>
   <a href="#message" data-label="My Letter"></a>
 </nav>
@@ -816,42 +795,6 @@ footer .moon-back{position:relative;margin-top:34px;color:rgba(230,207,156,.55);
   <div class="reason-count reveal" data-delay="3" id="reasonCount"></div>
 </section>
 
-<!-- ════════════════ TIMELINE ════════════════ -->
-<section id="timeline">
-  <div class="tl-head">
-    <span class="sec-eyebrow reveal">Our Story So Far</span>
-    <h2 class="sec-title reveal" data-delay="1">A Timeline of <span class="script">us</span></h2>
-  </div>
-
-  <!-- FILL IN YOUR REAL MEMORIES below -->
-  <div class="tl">
-    <div class="tl-item reveal">
-      <div class="tl-date">The Beginning</div>
-      <h3>The Day We Met 🌱</h3>
-      <p>Edit this: where it all started — the place, the moment, the first impression you'll never forget.</p>
-    </div>
-    <div class="tl-item reveal">
-      <div class="tl-date">Chapter Two</div>
-      <h3>When We Became "Us" 💜</h3>
-      <p>Edit this: the moment you realised this wasn't just a friendship — it was THE friendship.</p>
-    </div>
-    <div class="tl-item reveal">
-      <div class="tl-date">Chapter Three</div>
-      <h3>That One Unforgettable Day ✨</h3>
-      <p>Edit this: the adventure, the laughing fit, the inside joke that still makes zero sense to anyone else.</p>
-    </div>
-    <div class="tl-item reveal">
-      <div class="tl-date">Chapter Four</div>
-      <h3>Through Thick &amp; Thin 🌙</h3>
-      <p>Edit this: the hard time you got each other through, and how she showed up when it mattered most.</p>
-    </div>
-    <div class="tl-item reveal">
-      <div class="tl-date">Today &amp; Always</div>
-      <h3>15 June 2026 — Forever to Go 🪻</h3>
-      <p>Edit this: where you are now, and everything you're still going to do together. The best chapters are unwritten.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ════════════════ CAKE ════════════════ -->
 <section id="cake-sec">
